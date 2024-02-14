@@ -46,15 +46,22 @@ class formatter {
 
     //Adding a Way to incorporate a Last Name
     let fullName = userName.replace("%", " ");
-
+    
     //Grabbing index of the First Letter of Last Name
-    let lastName = (userName.indexOf("%")) + 1
+    let lastNameStartIndex = (userName.indexOf("%")) + 1
+
+    //Slicing full Name into two different Strings
+    let lastName = fullName.slice(lastNameStartIndex);
+    let firstName = fullName.slice(0, lastNameStartIndex);
 
     //Using Index to Grab the Letter then Capitalizing It
-    let capital = fullName[lastName].toUpperCase();
+    let capital = lastName[0].toUpperCase();
 
     //Replace initial Letter with the Capitalized one
-    let finalName = fullName.replace(fullName.charAt(lastName), capital);
+    let finalLastName = lastName.replace(lastName.charAt(0), capital);
+    
+    //Combining the Two Strings
+    let finalName = firstName + finalLastName;
 
     //Printing Name to Screen
     this.username.textContent = `Your Name is ${finalName}`;

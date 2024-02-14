@@ -18,12 +18,21 @@ h1 {
   text-align: center;
 }
 
+details {
+  color: white;
+  text-align: center;
+}
+
+details p {
+  margin-top: 10px;
+}
+
 main {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  width: 400px
+  width: 450px
 }
 
 input {
