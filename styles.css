@@ -23,6 +23,10 @@ details {
   text-align: center;
 }
 
+summary {
+  cursor: pointer;
+}
+
 details p {
   margin-top: 10px;
 }

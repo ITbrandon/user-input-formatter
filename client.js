@@ -77,7 +77,7 @@ class formatter {
      let lastName = fullName.slice(lastNameStartIndex);
      let firstName = fullName.slice(0, lastNameStartIndex);
  
-     //Using Index to Grab the Letter then Capitalizing It
+     //Grabbing the first Letter then Capitalizing It
      let capital = lastName[0].toUpperCase();
  
      //Replace initial Letter with the Capitalized one
